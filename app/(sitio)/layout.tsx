@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next"
 
+import { sitio } from "@/config/sitio"
 import { BannerDemo } from "@/components/demos/banner-demo"
 import { capaFuentes } from "@/components/demos/verde/fuentes"
 import { Anuncio, Encabezado } from "@/components/demos/verde/encabezado"
@@ -10,10 +11,20 @@ import "./verde-3d.css"
 
 export const metadata: Metadata = {
   // "absolute": la demo no hereda la plantilla de título del portfolio.
-  title: { absolute: "Verde Tienda · Plantas con envío en el día en Montevideo" },
+  title: {
+    absolute: "Verde Tienda · Plantas con envío en el día en Montevideo",
+  },
   description:
     "Vivero online: plantas de interior, exterior, suculentas y huerta con envío en el día en Montevideo, guía de cuidados y quiz para encontrar tu planta. Pagá con Mercado Pago en cuotas.",
-  robots: { index: false, follow: false },
+  robots: { index: false, follow: true },
+  openGraph: {
+    type: "website",
+    locale: "es_UY",
+    siteName: `${sitio.nombre} · proyecto de muestra`,
+    title: "Verde Tienda · Plantas con envío en el día en Montevideo",
+    description:
+      "Vivero online: plantas de interior, exterior, suculentas y huerta con envío en el día en Montevideo, guía de cuidados y quiz para encontrar tu planta. Pagá con Mercado Pago en cuotas.",
+  },
 }
 
 export const viewport: Viewport = {

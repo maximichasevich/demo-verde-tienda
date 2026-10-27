@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { Geist } from "next/font/google"
 
 import "./globals.css"
+import { Credito } from "@/components/demos/credito"
 import { WhatsappFlotante } from "@/components/whatsapp-flotante"
 import { sitio } from "@/config/sitio"
 import { cn } from "@/lib/utils"
@@ -14,8 +15,9 @@ const geist = Geist({ subsets: ["latin"], variable: "--font-sans" })
  */
 export const metadata: Metadata = {
   metadataBase: new URL(sitio.url),
-  // Es un negocio ficticio: que los buscadores no lo indexen.
-  robots: { index: false, follow: false },
+  // Es un negocio ficticio: que los buscadores no lo muestren, pero que
+  // sigan el link al portfolio.
+  robots: { index: false, follow: true },
 }
 
 export default function RootLayout({
@@ -29,6 +31,7 @@ export default function RootLayout({
     >
       <body>
         {children}
+        <Credito />
         {/* Botón para contactar al desarrollador (no al negocio ficticio). */}
         <WhatsappFlotante />
       </body>
