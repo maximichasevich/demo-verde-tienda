@@ -16,5 +16,5 @@ export const sitio = {
     process.env.NEXT_PUBLIC_PORTFOLIO_URL ??
     "https://michasevich.com",
   /** WhatsApp del desarrollador (con código de país, sin "+" ni espacios). */
-  whatsapp: "59892443629",
+  whatsapp: "59896962132",
 }
