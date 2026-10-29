@@ -137,10 +137,10 @@ export function Maceta3D({
         onKeyDown={(ev) => {
           if (ev.key === "ArrowLeft") {
             ev.preventDefault()
-            empujar(-40)
+            empujar(40)
           } else if (ev.key === "ArrowRight") {
             ev.preventDefault()
-            empujar(40)
+            empujar(-40)
           }
         }}
         onPointerDown={(ev) => {
@@ -156,8 +156,8 @@ export function Maceta3D({
           if (!e.arrastrando) return
           const dx = ev.clientX - e.x
           e.x = ev.clientX
-          e.angulo += dx * 0.55
-          e.vel = dx * 0.55
+          e.angulo -= dx * 0.55
+          e.vel = -dx * 0.55
         }}
         onPointerUp={() => {
           const e = estadoRef.current

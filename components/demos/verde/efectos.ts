@@ -59,7 +59,7 @@ export function volarAlCarrito(origen: Element | null | undefined, foto: string)
     height: `${tam}px`,
     borderRadius: "999px",
     border: `2px solid ${TINTA}`,
-    background: `#fffdf8 url("${foto}") center / cover`,
+    background: `#f6faf2 url("${foto}") center / cover`,
     boxShadow: `2px 2px 0 ${TINTA}`,
     zIndex: "90",
     pointerEvents: "none",

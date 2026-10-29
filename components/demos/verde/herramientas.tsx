@@ -77,7 +77,7 @@ function MedidorLuz() {
             </g>
             {/* Nubes cuando hay poca luz */}
             <g style={{ opacity: Math.max(0, 1 - t * 2.2) }} className="transition-opacity duration-500">
-              <path d="M30 70 q4 -18 22 -14 q8 -14 24 -4 q16 -2 16 14 q0 12 -14 12 h-40 q-12 0 -8 -8 Z" fill="#fffdf8" stroke="#1f2a22" strokeWidth="3" />
+              <path d="M30 70 q4 -18 22 -14 q8 -14 24 -4 q16 -2 16 14 q0 12 -14 12 h-40 q-12 0 -8 -8 Z" fill="#f6faf2" stroke="#1f2a22" strokeWidth="3" />
             </g>
             {/* Marco de la ventana */}
             <path d="M100 0 V200 M0 120 H200" stroke="#1f2a22" strokeWidth="5" />
@@ -97,7 +97,7 @@ function MedidorLuz() {
               const d = `M100 100 L${100 + r * Math.cos(a0)} ${100 + r * Math.sin(a0)} A${r} ${r} 0 0 1 ${100 + r * Math.cos(a1)} ${100 + r * Math.sin(a1)} Z`
               return <path key={z.luz} d={d} fill={["#a9a6c9", "#b6dcff", "#ffe9a3", "#ffd84d"][i]} stroke="#1f2a22" strokeWidth="3" strokeLinejoin="round" />
             })}
-            <circle cx="100" cy="100" r="30" fill="#fffdf8" stroke="#1f2a22" strokeWidth="3" />
+            <circle cx="100" cy="100" r="30" fill="#f6faf2" stroke="#1f2a22" strokeWidth="3" />
             <g className="vt-aguja" style={{ transform: `rotate(${-90 + t * 180}deg)` }}>
               <path d="M96 100 L100 26 L104 100 Z" fill="#ff6542" stroke="#1f2a22" strokeWidth="2.6" strokeLinejoin="round" />
             </g>

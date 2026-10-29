@@ -6,8 +6,8 @@
  */
 .verde,
 .vt-capa {
-  --vt-crema: #fff5e6;
-  --vt-papel: #fffdf8;
+  --vt-crema: #e4efdd; /* antes #fff5e6 (crema): ahora verde salvia, para diferenciarse de La Espiga */
+  --vt-papel: #f6faf2; /* antes #fffdf8 */
   --vt-tinta: #1f2a22;
   --vt-tinta-70: rgba(31, 42, 34, 0.74);
   --vt-tinta-50: rgba(31, 42, 34, 0.55);
@@ -18,7 +18,7 @@
   --vt-manteca: #ffd84d;
   --vt-lila: #cbbcff;
   --vt-rosa: #ffbfd4;
-  --vt-menta: #b8ead0;
+  --vt-menta: #a8dcb9; /* antes #b8ead0 */
   --vt-cielo: #b6dcff;
   --vt-durazno: #ffcf9e;
   --seleccion: var(--vt-manteca);
@@ -37,7 +37,7 @@
 
 /* El fondo del documento (rebote del scroll) también en crema. */
 body:has(.verde) {
-  background: #fff5e6;
+  background: #e4efdd;
 }
 
 .verde :focus-visible,
